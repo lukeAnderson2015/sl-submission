@@ -1,0 +1,29 @@
+.view-container {
+    display: grid;
+    grid-gap: 15px;
+    padding: 50px 25px 50px 25px;
+
+    @media (min-width: 920px) {
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+.view-container__tile {
+    background-color: white;
+    box-shadow: 3px 3px 3px lightgrey;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.chart-container {
+    min-height: 600px;
+    margin-bottom: 15px;
+    @media (min-width: 920px) {
+        margin-bottom: 50px;
+    }
+}
