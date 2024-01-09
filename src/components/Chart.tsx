@@ -9,8 +9,8 @@ import {
     Tooltip,
   } from 'chart.js';
   import { Line } from "react-chartjs-2";
-  import './Chart.css';
-  import {IChart} from './types';
+  import '../style/Chart.css';
+  import {IChart} from '../util/types';
 
   ChartJS.register(
     CategoryScale,
@@ -24,7 +24,7 @@ import {
 
   ChartJS.defaults.font.family = 'Poppins';
 
-function ChartComponent ({data, containerClassName}: IChart) {
+function Chart ({data, containerClassName}: IChart) {
     return (
         <Line
             data={data}
@@ -78,4 +78,4 @@ function ChartComponent ({data, containerClassName}: IChart) {
     )
 }
 
-export default ChartComponent;
+export default Chart;

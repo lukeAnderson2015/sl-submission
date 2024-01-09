@@ -1,10 +1,10 @@
 import { Provider } from 'react-redux';
 import Header from './Header';
 import ProductSalesView from './ProductSalesView';
-import jsonData from './stackline_frontend_assessment_data_2021.json';
-import store from './store';
+import jsonData from '../assets/stackline_frontend_assessment_data_2021.json';
+import store from '../store/store';
 
-import './App.css';
+import '../style/App.css';
 
 function App() {
   return (

@@ -31,7 +31,7 @@ interface IProductSalesView {
     sales: ISale[];
 }
 
-interface DetailsPane {
+interface IDetailsPane {
     title: string;
     image: string;
     subtitle: string;
@@ -65,7 +65,7 @@ export type {
     IReview,
     IProductSalesView,
     ISale,
-    DetailsPane,
+    IDetailsPane,
     IState,
     IChart,
     ESortDirection,

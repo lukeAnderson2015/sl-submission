@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { IProductSalesView, IState, ISale } from './types';
+import { IProductSalesView, IState } from '../util/types';
 import DetailsPane from './DetailsPane';
 import Chart from './Chart';
 import Table from './Table';
-import { changeSortColumn, changeSortDirection, ASCENDING } from './sortingConfigSlice';
+import { changeSortColumn, changeSortDirection, ASCENDING } from '../store/sortingConfigSlice';
 
-import './ProductSalesView.css';
+import '../style/ProductSalesView.css';
 
-function ProductSalesViewComponent (viewData: IProductSalesView) {
+function ProductSalesView (viewData: IProductSalesView) {
     const sortingConfig = useSelector((state: IState) => state.sortingConfig);
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
     const handleChangeSortColumn = (columnName: string) => {
         if (sortingConfig.column !== columnName) {
@@ -77,4 +77,4 @@ function ProductSalesViewComponent (viewData: IProductSalesView) {
     )
 }
 
-export default ProductSalesViewComponent;
+export default ProductSalesView;

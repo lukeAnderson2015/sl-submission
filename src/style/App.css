@@ -1,6 +1,6 @@
 @font-face {
   font-family: Poppins;
-  src: url(Poppins-regular.ttf);
+  src: url(../assets/Poppins-regular.ttf);
 }
 
 .App, button {

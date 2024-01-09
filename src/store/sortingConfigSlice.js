@@ -15,11 +15,11 @@ export const sortingConfigSlice = createSlice({
       state.direction = direction === ASCENDING ? DESCENDING : ASCENDING;
     },
     changeSortColumn: (state, action) => {
-      state.column = action.payload
+      state.column = action.payload;
     },
   },
 })
 
-export const { changeSortColumn, changeSortDirection } = sortingConfigSlice.actions
+export const { changeSortColumn, changeSortDirection } = sortingConfigSlice.actions;
 
-export default sortingConfigSlice.reducer
+export default sortingConfigSlice.reducer;

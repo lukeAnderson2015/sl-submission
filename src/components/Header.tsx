@@ -1,6 +1,6 @@
-import logo from './stackline_logo.svg';
+import logo from '../assets/stackline_logo.svg';
 
-import './Header.css';
+import '../style/Header.css';
 
 function Header() {
   return (
